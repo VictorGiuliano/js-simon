@@ -17,10 +17,12 @@ const timer = setInterval( function () {
         let min = Math .floor((difference % ( 1000 * 60 * 60 )) / ( 1000 * 60 ));
         let sec = Math .floor((difference % ( 1000 * 60 )) / 1000 ); 
 
-        days.innerText=day;
+        days.innerText=day
         hours.innerText=hour;
         minutes.innerText=min;
         seconds.innerText=sec;
-    }
+    }else{
+        return;
+   }
 }, 1000 );
     
